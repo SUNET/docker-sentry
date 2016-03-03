@@ -19,7 +19,7 @@ mkdir -p /var/run/sentry/
 chown sentry: /var/run/sentry
 chmod 770 /var/run/sentry
 
-/opt/sentry/bin/pip install sentry[postgres] uwsgi
+/opt/sentry/bin/pip install 'sentry[postgres]==7.7.4' uwsgi
 /opt/sentry/bin/pip install supervisor --pre
 
 /opt/sentry/bin/pip freeze
