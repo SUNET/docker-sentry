@@ -179,6 +179,7 @@ SERVER_EMAIL = 'root@localhost'
 MAILGUN_API_KEY = ''
 ```
 
+config.yml
 ```yaml
 # While a lot of configuration in Sentry can be changed via the UI, for all
 # new-style config (as of 8.0) you can also declare values here in this file
