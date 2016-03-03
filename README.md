@@ -1,9 +1,11 @@
 # docker-sentry
 
+Sentry 7.7.4 is used in this project.
+
 ### Sentry configuration
 You need to supply a Sentry configuration file to /opt/sentry/conf/sentry.conf.py.
 
-Please have a look at [https://sentry.readthedocs.org/en/latest/quickstart/index.html#initializing-the-configuration].
+Please have a look at [https://docs.getsentry.com/on-premise/server/]. Notice that there seems to be no documentation for Sentry < 8 anymore :( so your milage may vary.
 
 Here is the default config to start from:
 ```
