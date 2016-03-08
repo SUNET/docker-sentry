@@ -23,15 +23,16 @@ RUN apt-get update && \
 VOLUME ["/opt/sentry/conf", "/var/log/sentry"]
 
 ADD setup.sh /opt/sentry/setup.sh
-ADD supervisor.conf /etc/supervisor.conf
 ADD uwsgi.ini /etc/uwsgi.ini
 
 RUN /opt/sentry/setup.sh
 
-ADD start.sh /start.sh
+ADD sentry.sh /sentry.sh
+ADD worker.sh /worker.sh
+ADD beat.sh /beat.sh
 
 WORKDIR /
 
 EXPOSE 9000
 
-CMD ["bash", "/start.sh"]
+CMD ["bash", "/sentry.sh"]
